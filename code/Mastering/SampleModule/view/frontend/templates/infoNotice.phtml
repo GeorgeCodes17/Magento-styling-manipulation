@@ -1,0 +1,16 @@
+<?php
+// This is the template for the infonotice
+/**
+ * @var Mastering\SampleModule\Block\InfoNotice $block
+ */
+
+// Gets the data for placing
+$infoNoticeMessage = $block->getConfigurationData();
+// if there is an info notice, and it is set to enabled then show it on the page
+if($infoNoticeMessage != false){
+?>
+    <div class="info-notice" style="text-align:center">
+        <span><?php echo __($infoNoticeMessage) ?></span>
+    </div>
+<?php
+}

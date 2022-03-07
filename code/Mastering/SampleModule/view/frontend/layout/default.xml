@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- This is where the template file and subsequently the block are positioned on page -->
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <!-- Place the block in the below section -->
+     <referenceContainer name="header.container">
+     <!-- The block has attribute template- says how the content of blocks are presented, block- the content to display on page -->
+         <block class="Mastering\SampleModule\Block\InfoNotice" template="Mastering_SampleModule::infoNotice.phtml" name="info-notice" before="-"/>
+     </referenceContainer>
+
+</page>
