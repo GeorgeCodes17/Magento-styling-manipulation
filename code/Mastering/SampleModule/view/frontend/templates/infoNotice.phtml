@@ -10,7 +10,15 @@ $infoNoticeMessage = $block->getConfigurationData();
 if($infoNoticeMessage != false){
 ?>
     <div class="info-notice" style="text-align:center">
-        <span><?php echo __($infoNoticeMessage) ?></span>
+        <?php
+        for($i = 0; $i < strlen($infoNoticeMessage); $i++){
+            if($i%2 == 0){
+                echo '<span class="green-letter">' . $infoNoticeMessage[$i] . '</span>';
+            }else{
+                echo '<span class="red-letter">' . $infoNoticeMessage[$i]. '</span>';
+            }
+        }
+        ?>
     </div>
 <?php
 }

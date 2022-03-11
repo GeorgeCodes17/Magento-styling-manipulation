@@ -3,3 +3,10 @@
     border: 3px solid green; 
     text-align: center; 
 }
+
+.green-letter{
+    color: green;
+}
+.red-letter{
+    color: red;
+}
